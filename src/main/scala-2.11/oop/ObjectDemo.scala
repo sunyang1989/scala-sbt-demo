@@ -7,13 +7,14 @@ package oop
   * @date 2016/5/31
   */
 class ObjectDemo2 {
+
+  //默认private级别，默认生成public级别的get，set方法
+  //val定义常量，因此name 是 final 类型的，没有set方法
   val name = "sun"
-  //private级别，默认生成public级别的get方法
+  //默认private级别，默认生成public级别的get方法
   //get 方法名称：age
   //set 方法名称：age_
   var age = 0
-  //默认private级别，默认生成public级别的get，set方法
-  //val定义常量，因此name 是 final 类型的，没有set方法
   private var sex = 0 //私有属性必须赋值，默认生成private级别的get，set方法
 }
 
