@@ -18,10 +18,11 @@ object ObjectOps {
 /**
   * object A 是 class A 的伴生对象
   * class A 是 object A 的伴生类，可以访问伴生对象的所有属性和方法，包括private
+  * 伴生对象可以访问伴生类的所有属性和方法
   */
 class A {
   var ca = A.add
-  private var cb = A.ob
+  var cb = A.ob
 }
 
 object A {

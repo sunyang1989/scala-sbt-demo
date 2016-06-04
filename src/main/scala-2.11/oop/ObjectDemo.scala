@@ -26,9 +26,12 @@ class ObjectDemo2 {
   * private[package]：package私有
   */
 package society {
+
+  import oop.society.professional.ObjectDemo1
   package professional {
 
-    class ObjectDemo1 {
+    //ObjectDemo1 类是society包私有的
+    private[society] class ObjectDemo1 {
       private[this] val secrets = null
       private[professional] var workDetails = null
       private[society] var friends = null
@@ -37,10 +40,14 @@ package society {
         println(another.workDetails)
         //println(another.secrets) //ERROR
       }
-    }
-
+      }
   }
 
+  class DemoSun {
+    val demo1 = new ObjectDemo1
+    demo1.friends //可以访问，包私有，在包里面就可以访问
+    //demo1.workDetails //Error
+  }
 }
 
 object ObjectDemo {
