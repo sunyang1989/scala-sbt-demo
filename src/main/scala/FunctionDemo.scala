@@ -1,28 +1,29 @@
 /**
-  * 函数声明
+  * 函数声明 偏函数
   *
   * @user sun 
   * @date 2016/5/29
   */
 object FunctionDemo {
+  /** 偏函数 **/
+  val ary = List(1, 2, 3, 4, 5, 6)
+  ary.foreach(println)
 
-  /**
-    * 递归函数
-    */
+  println()
+
+  /** 递归函数 **/
   def fac(n: Int): Int = {
     if (n <= 0) 1
     else n * fac(n - 1)
   }
 
-  /**
-    * 有默认值的函数
-    */
+  /** 有默认值的函数 **/
   def combine(context: String, left: String = "[", right: String = "]"): String = {
     left + context + right
   }
 
   /**
-    * 可变参数
+    * 可变参数,多个参数
     */
   def sun(args: Int*): Int = {
     var result = 0
