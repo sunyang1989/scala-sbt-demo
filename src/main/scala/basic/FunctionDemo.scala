@@ -1,3 +1,5 @@
+package basic
+
 /**
   * 函数声明 偏函数
   *

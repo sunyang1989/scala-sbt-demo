@@ -1,3 +1,5 @@
+package basic
+
 /**
   * object 里面的都是静态代码块，没有主动调用也会执行
   *
@@ -15,24 +17,6 @@ object BasicDemo {
     line = readLine()
     println("Read：" + line)
   } while (!line.isEmpty)
-
-  /**
-    * 方法声明
-    *
-    * @param x 参数x
-    * @param y 参数y
-    * @return long
-    */
-  def doWhile(x: Long, y: Long): Long = {
-    var a = x
-    var b = y
-    while (a != 0) {
-      val temp = a
-      a = b % a
-      b = temp
-    }
-    b
-  }
 
   /**
     * 程序入口
@@ -59,5 +43,23 @@ object BasicDemo {
     } finally {
       println("已经捕获异常")
     }
+  }
+
+  /**
+    * 方法声明
+    *
+    * @param x 参数x
+    * @param y 参数y
+    * @return long
+    */
+  def doWhile(x: Long, y: Long): Long = {
+    var a = x
+    var b = y
+    while (a != 0) {
+      val temp = a
+      a = b % a
+      b = temp
+    }
+    b
   }
 }

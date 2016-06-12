@@ -1,3 +1,5 @@
+package basic
+
 import java.io.{File, PrintWriter}
 
 import scala.io.Source

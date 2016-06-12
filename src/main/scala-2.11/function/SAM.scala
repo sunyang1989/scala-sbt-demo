@@ -4,7 +4,7 @@ import java.awt.event.{ActionEvent, ActionListener}
 import javax.swing.{JButton, JFrame}
 
 /**
-  * SAM
+  * SAM：隐式转换
   *
   * @user sun 
   * @date 2016/6/5
