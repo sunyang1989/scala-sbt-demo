@@ -1,5 +1,7 @@
 package actor
 
+import scala.actors.Actor
+import scala.actors.Actor._
 /**
   * 匿名线程
   *

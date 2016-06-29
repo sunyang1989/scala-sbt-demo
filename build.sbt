@@ -4,8 +4,11 @@ version := "1.0"
 
 scalaVersion := "2.11.8"
 
-libraryDependencies +=
-  "com.typesafe.akka" %% "akka-actor" % "2.4-SNAPSHOT"
+libraryDependencies ++= Seq(
+  //"com.typesafe.akka" %% "akka-actor" % "2.4-SNAPSHOT",
+  "org.scala-lang" % "scala-swing" % "2.11.0-M7",
+  "org.scala-lang" % "scala-actors" % "2.11.8"
+)
 
 resolvers += "Akka Snapshot Repository" at "http://repo.akka.io/snapshots/"
     

@@ -1,7 +1,6 @@
 package actor
 
-//2.11之前的版本，之后的版本和akka合并
-//import scala.actors.Actor
+import scala.actors.Actor
 
 /**
   * 线程 继承基本线程类Actor

@@ -1,5 +1,7 @@
 package actor
 
+import scala.actors.Actor
+import scala.actors.Actor._
 /**
   * 线程 发送消息，接受消息
   *

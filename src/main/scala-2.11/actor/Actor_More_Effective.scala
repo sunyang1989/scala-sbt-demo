@@ -1,6 +1,8 @@
 package actor
-
 import java.net.{InetAddress, UnknownHostException}
+
+import scala.actors.Actor
+import scala.actors.Actor._
 
 /**
   * loop：重复执行代码块
