@@ -36,7 +36,7 @@ public class MapActor extends UntypedActor {
         List<WordCount> list = new ArrayList<>();
         StringTokenizer parse = new StringTokenizer(word);
         while (parse.hasMoreTokens()) {
-            String tem = parse.nextToken().toUpperCase();
+            String tem = parse.nextToken().toLowerCase();
             if (!STOP_WORDS_LIST.contains(tem)) {
                 list.add(new WordCount(tem, 1));
             }

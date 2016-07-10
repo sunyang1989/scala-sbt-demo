@@ -18,9 +18,8 @@ public class HelloAkka {
         ActorRef master = system.actorOf(Props.create(MasterActor.class), "master");
 
         master.tell("hi! my name is sunyang , I'm so happy to be here .", null);
-
-        Thread.sleep(2000);
-
+        master.tell("hi! my name is sunyang ", null);
+        Thread.sleep(500);
         master.tell(new Result(), null);
         system.shutdown();
     }
